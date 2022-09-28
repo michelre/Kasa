@@ -27,8 +27,6 @@ function ListingDetails() {
   if (listing === null) {
     return null
   }
-  console.log(listing.rating)
-
   const pictures = listing.pictures.map((picture, index) => (
     <img src={picture} alt="" key={index} />
   ))
@@ -52,13 +50,16 @@ function ListingDetails() {
       </section>
       <section className="ratings">
         <span>
-          {[1, 2, 3, 4, 5].map((value) => (
-            <Star key={value} filled={value <= listing.rating} />
-          ))}
+          <Star rating={listing.rating}/>
         </span>
       </section>
       <section className="dropdown-section">
-        <Dropdown text="Description">{listing.description}</Dropdown>
+        <Dropdown
+            text="Description"
+            open={true}
+        >
+            {listing.description}
+        </Dropdown>
         <Dropdown text="Équipements">
           <ul>
             {listing.equipments.map((equipment, index) => (
