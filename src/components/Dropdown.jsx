@@ -1,4 +1,7 @@
 import React from "react";
+import '../styles/Dropdowns.css'
+import { ReactComponent as Arrow } from '../assets/arrow.svg'
+
 
 function Dropdown (props){
     return (
@@ -6,7 +9,7 @@ function Dropdown (props){
             className="dropdown"
             open={props.open}
         >
-            <summary>{props.text}</summary>
+            <summary>{props.text} <Arrow /></summary>
             <div>
               {props.children}
             </div>
@@ -15,4 +18,3 @@ function Dropdown (props){
 }
 
 export default Dropdown
-

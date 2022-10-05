@@ -14,13 +14,15 @@ function Home() {
 
   return (
     <div>
-      <Banner />
       <Header />
-      <section className="listings">
-        {listings.map((listing) => (
-          <Listing listing={listing} key={listing.id} />
-        ))}
-      </section>
+      <div className="container-home" style={{ padding: '32px' }}>
+        <Banner />
+        <section className="listings">
+          {listings.map((listing) => (
+            <Listing listing={listing} key={listing.id} />
+          ))}
+        </section>
+      </div>
       <Footer />
     </div>
   )

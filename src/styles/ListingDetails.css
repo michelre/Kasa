@@ -1,0 +1,90 @@
+.container-bottom{
+    padding: 47px;
+}
+
+.listing-infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.tags ul{
+    padding-inline-start: 0px;
+}
+
+.tags ul li{
+    height: 25px;
+    min-width: 115px;
+    padding: 0 15px;
+    align-items: center;
+    background: #ff6060;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-flex;
+    font-family: Montserrat,sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.listing-content{
+    color: #ff6060;
+}
+
+.listing-content-right{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #ff6060;
+}
+
+.listing-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 14px;
+}
+
+.listing-title{
+    font-size: 27px;
+    margin-bottom: -8px;
+    font-weight: 300;
+}
+
+.listing-location{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.listing-content-right img{
+    border-radius: 60px;
+    height: 64px;
+    width: 64px;
+}
+
+.listing-owner-name{
+    font-size: 18px;
+    font-weight: 300;
+    width: 88px;
+    margin-right: -6px;
+}
+
+.ratings{
+    display: flex;
+   
+}
+
+.ratings span svg{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
